@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  huami:
+    network_mode: host
+    container_name: huami
+    restart: unless-stopped
+    image: huami:1.1.3
+    volumes:
+      - "/opt/huami/huami:/app"
+  adminer:
+    image: adminer
+    container_name: adminer
+    network_mode: host
+    restart: unless-stopped
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    network_mode: host
+    environment:
+      MYSQL_ROOT_PASSWORD: #NICHTORIGINAL
+      MYSQL_USER: huami
+      MYSQL_DATABASE: huami
+      MYSQL_PASSWORD: #AUCHNICHTORIGINAL
+    volumes:
+      - "/opt/huami/db:/var/lib/mysql"
+    restart: unless-stopped

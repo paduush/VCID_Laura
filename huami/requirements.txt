@@ -1,0 +1,16 @@
+flask
+Flask-Bootstrap
+Flask-Login
+Flask-Mail
+Flask-SQLAlchemy
+Flask-WTF
+Flask-Migrate
+Flask-Httpauth
+Flask-Bootstrap
+Werkzeug
+WTForms
+Flask-Ext
+python-dotenv
+pymysql
+cryptography
+email-validator

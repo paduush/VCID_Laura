@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<h1>Hello {{ current_user.username }}</h1>
+  <h2> Neues Rezept Verfassen </h2>
+
+    <form action="" method="post">
+	   {{ entry.hidden_tag() }}
+        <p>
+            {{ entry.Name.label }}<br>
+            {{ entry.Name }}
+        </p>
+        <p>
+            {{ entry.Subtext.label }}<br>
+            {{ entry.Subtext }}
+        </p>
+        <p>
+            {{ entry.Time.label }}<br>
+            {{ entry.Time }}
+        </p>
+        <p>
+            {{ entry.Saison.label }}<br>
+            {{ entry.Saison }}
+        </p>
+        <p>
+            {{ entry.Make.label }}<br>
+            {{ entry.Make }}
+        </p>
+        <table>
+        <tr>
+        <th>{{ entry.Ing1.label }} </th>
+        <th>{{ entry.Stp1.label }} </th>
+	</tr>
+        <tr>
+        <td>{{ entry.Ing1 }}</td>
+        <td>{{ entry.Stp1 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing2 }}</td>
+        <td>{{ entry.Stp2 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing3 }}</td>
+        <td>{{ entry.Stp3 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing4 }}</td>
+        <td>{{ entry.Stp4 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing5 }}</td>
+        <td>{{ entry.Stp5 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing6 }}</td>
+        <td>{{ entry.Stp6 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing7 }}</td>
+        <td>{{ entry.Stp7 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing8 }}</td>
+        <td>{{ entry.Stp8 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing10 }}</td>
+        <td>{{ entry.Stp10 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing11 }}</td>
+        <td>{{ entry.Stp11 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing12 }}</td>
+        <td>{{ entry.Stp12 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing13 }}</td>
+        <td>{{ entry.Stp13 }}</td>
+        </tr>
+        <td>{{ entry.Ing14 }}</td>
+        <td>{{ entry.Stp14 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing15 }}</td>
+        <td>{{ entry.Stp15 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing16 }}</td>
+        <td>{{ entry.Stp16 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing17 }}</td>
+        <td>{{ entry.Stp17 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing18 }}</td>
+        <td>{{ entry.Stp18 }}</td>
+        </tr>
+        <tr>
+        <td>{{ entry.Ing19 }}</td>
+        <td>{{ entry.Stp19 }}</td>
+        </tr>
+        </table>
+        <p>{{ entry.submit() }}</p>
+         </form>
+        {% endblock %}
